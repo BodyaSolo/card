@@ -5,12 +5,22 @@
 body {
     background: grey;
     cursor: default;
+    
 }
 
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    max-width: 750px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 500px){
+    .container{
+        flex-direction: column;
+        align-content: center;
+    }
 }
 
 .card {
@@ -25,6 +35,7 @@ body {
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-right: 5px;
+    margin-bottom: 5px;
     box-sizing: content-box;
 }
 
