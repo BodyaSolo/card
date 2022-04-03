@@ -69,6 +69,20 @@ body {
     transition: all ease 1s;
 }
 
+.slider-line2 {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slider-line3 {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
 .button-img {
     border: none;
     background-color: white;
