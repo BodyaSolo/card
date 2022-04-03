@@ -1,0 +1,175 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background: grey;
+    cursor: default;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    width: 200px;
+    height: 350px;
+    
+    background: #fff;
+    
+    border-radius: 8px;
+    
+    overflow: hidden;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 5px;
+    box-sizing: content-box;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:hover{
+    border: 2px green solid;
+}
+
+.card-image {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.card-image:hover {
+    opacity: 0.8;
+}
+
+.button-panel {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    opacity: 0;
+}
+
+.button-panel:hover {
+    opacity: 0.8;
+}
+
+.slider {
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.button-img {
+    border: none;
+    background-color: white;
+    opacity: 1;
+    width: 50%;
+    height: 10px;
+    padding: 0;
+    margin-bottom: 3px;
+}
+
+.card-body {
+    padding: 5px 15px;
+}
+
+.card-sale {
+    font-size: 10px;
+    
+}
+
+.card-sale span {
+    color: white;
+    padding: 1px;
+    border-radius: 2px;
+}
+
+.sale {
+    background-color: red;
+}
+
+.hit, .new {
+    background-color: green;
+}
+
+.card-title {
+    font-size: 14px;
+    font-style: italic;
+    text-align: start;
+    margin-bottom: 2px; 
+}
+
+.card-title a {
+    color: grey;
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: green;
+    text-decoration: underline
+}
+
+.card-rating {
+    font-size: 9px;
+    margin-bottom: 2px;
+    color: grey;
+}
+
+.card-price {
+    margin-bottom: 7px;
+}
+
+.card-price span {
+    padding-right: 5px;
+    font-style: italic;
+    color: green;
+}
+
+.card-price .old-price {
+    color: grey;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.card-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-button button {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 12px;
+    font-style: italic;
+    color: grey;
+}
+
+.card-button .buy:hover {
+    background: green;
+    color: white;
+}
+
+.card-button .buy:active {
+    opacity: 0.7;
+}
+
+.card-button .compare:hover {
+    background: yellow;
+    color: white;
+}
+
+.card-button .co:active {
+    opacity: 0.7;
+}
